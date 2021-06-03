@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Muebleria Kotlin"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/editTextnombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre del Cliente"
+        android:importantForAutofill="yes"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre del Producto"
+        android:importantForAutofill="yes"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Precio"
+        android:importantForAutofill="yes"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/insertSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar a la lista" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/syncFS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sync to Firebase" />
+
+        <Button
+            android:id="@+id/readFS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Consultar Global" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apartados Globales"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
+
+    <ListView
+        android:id="@+id/resultApartado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
